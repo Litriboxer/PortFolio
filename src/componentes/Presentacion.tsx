@@ -7,15 +7,15 @@ class Presentacion extends React.Component {
 
 
 
-    render(): React.ReactNode {
-      return (
-  
-        <div>
+  render(): React.ReactNode {
+    return (
 
-<h1>PRESENTACION COMPONENTE</h1>
-        </div>
-      );
-}
+      <div>
+
+        <h1>PRESENTACION COMPONENTE</h1>
+      </div>
+    );
+  }
 }
 
 export default Presentacion;

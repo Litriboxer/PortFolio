@@ -13,7 +13,7 @@ class Footer extends React.Component {
     render(): React.ReactNode {
         return (
             <footer>
-                <div className="bg-gradient row container-xxl-1 px-5">
+                <div id="Contacto" className="bg-gradient row container-xxl-1 px-5">
 
                     <div className=" my-5">
                         <h5 className="col-12 d-flex justify-content-center display-6 text-secondary">Contacta conmigo</h5>
