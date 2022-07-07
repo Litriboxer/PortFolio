@@ -5,7 +5,7 @@
 @import "../../node_modules/bootstrap/scss/utilities";
 
 
-$gradient: linear-gradient(90deg, rgb(219, 230, 236) 25%, rgb(208, 234, 241) 65%,rgb(164, 188, 194) 85%, rgb(129, 168, 184) 95%);
+$gradient: linear-gradient(90deg, rgb(219, 230, 236) 25%, rgb(208, 234, 241) 65%, rgb(164, 188, 194) 85%, rgb(129, 168, 184) 95%);
 
 
 /* $custom-color-gray: rgb(122, 29, 29);
@@ -17,28 +17,10 @@ $theme-colors: map-merge($theme-colors , ("custom-color-gray":$custom-color-gray
 @import "../../node_modules/bootstrap/scss/root";
 
 
-.lineaFooter{
+.lineaFooter {
     height: 250px;
 }
 
-p section{
+p section {
     font-size: 1.5em;
 }
-
-.bg-imagen {
-    /* The image used */
-    
-    background-image: url("../multimedia/escaleraPresentacion.png");
-
-     /* Half height */
-  height: 25%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-   
-  }
-
-
-
