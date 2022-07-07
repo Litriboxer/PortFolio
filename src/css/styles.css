@@ -11980,4 +11980,19 @@ textarea.form-control-lg {
 
 .lineaFooter {
   height: 250px;
+}
+
+p section {
+  font-size: 1.5em;
+}
+
+.bg-imagen {
+  /* The image used */
+  background-image: url("../multimedia/escaleraPresentacion.png");
+  /* Half height */
+  height: 25%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }/*# sourceMappingURL=styles.css.map */

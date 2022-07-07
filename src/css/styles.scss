@@ -21,5 +21,24 @@ $theme-colors: map-merge($theme-colors , ("custom-color-gray":$custom-color-gray
     height: 250px;
 }
 
+p section{
+    font-size: 1.5em;
+}
+
+.bg-imagen {
+    /* The image used */
+    
+    background-image: url("../multimedia/escaleraPresentacion.png");
+
+     /* Half height */
+  height: 25%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   
+  }
+
 
 
