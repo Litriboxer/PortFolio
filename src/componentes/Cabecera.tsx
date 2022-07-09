@@ -2,23 +2,13 @@ import React from 'react';
 import fotoPedro from "../multimedia/FotoPedroCuenca.jpg"
 import '../css/styles.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Nav } from 'react-bootstrap';
-
-
-
 class Cabecera extends React.Component {
-
-
-
 
   render(): React.ReactNode {
     return (
 
       <div className="bg-gradient row container-xxl-1">
-
-        {/* cabecera */}
-
-        <div>
+        <div className="my-5">
           <div className="container-fluid row px-5">
             <div className="container-fluid row justify-content-center">
               <div className=" col-md-6 md" >
@@ -30,33 +20,9 @@ class Cabecera extends React.Component {
                   alt="foto cara Pedro Cuenca Panadero" width={250} height={250} />
               </div>
             </div>
-
-            {/* nav var */}
-
-            <div className="my-5">
-              <div className="collapse" id="navbarToggleExternalContent">
-                <div className="p-4 d-flex justify-content-center h4">
-                  <Nav.Link href="./Presentacion" className="text-secondary mx-5">Presentación</Nav.Link>
-                  <Nav.Link href="./Formacion" className="text-secondary mx-5">Formación academica</Nav.Link>
-                  <Nav.Link href="./ExperienciasLaborales" className="text-secondary mx-5">Experiencias laborales</Nav.Link>
-                  <Nav.Link href="./OtrosDatos" className="text-secondary mx-5">Otros datos de interés</Nav.Link>
-                  <Nav.Link href="./Referencias" className="text-secondary mx-5">Referencias</Nav.Link>
-                  <Nav.Link href="./Contacto" className="text-secondary mx-5">Contacto</Nav.Link>
-                </div>
-              </div>
-              <nav className="navbar">
-                <div className="container-fluid justify-content-center">
-                  <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                  </button>
-                </div>
-              </nav>
-            </div>
           </div>
         </div>
-
       </div>
-
     );
   }
 }

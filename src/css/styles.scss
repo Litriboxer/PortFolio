@@ -24,3 +24,11 @@ $theme-colors: map-merge($theme-colors , ("custom-color-gray":$custom-color-gray
 p section {
     font-size: 1.5em;
 }
+
+.navItems:hover {
+    transform: scale(1.5);
+}
+
+a {
+    text-decoration: none;
+}

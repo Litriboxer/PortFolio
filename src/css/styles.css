@@ -11984,4 +11984,12 @@ textarea.form-control-lg {
 
 p section {
   font-size: 1.5em;
+}
+
+.navItems:hover {
+  transform: scale(1.5);
+}
+
+a {
+  text-decoration: none;
 }/*# sourceMappingURL=styles.css.map */
