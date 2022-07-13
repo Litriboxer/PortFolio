@@ -4,13 +4,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 class Presentacion extends React.Component {
 
-
-
-
   render(): React.ReactNode {
     return (
 
-      <div className="bg-imagen bg-gradient ">
+      <div className="bg-imagen bg-gradient">
 
         <h1 className="text-secondary display-4 text-left pt-5 pb-3 ps-5">Un poco de mí</h1>
         <p className="mb-0">
