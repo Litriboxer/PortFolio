@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import '../css/App.css';
 import Cabecera from './Cabecera';
+import Documentos from './Documentos';
 import ExperienciasLaborales from './ExperienciasLaborales';
 import Footer from './Footer';
 import FormacionAcademica from './FormacionAcademica';
@@ -22,8 +23,9 @@ class App extends React.Component {
               <Route path="/presentacion" element={<Presentacion />} />
               <Route path="/formacion" element={<FormacionAcademica />} />
               <Route path="/experienciasLaborales" element={<ExperienciasLaborales />} />
-              <Route path="/otrosDatos" element={<OtrosDatosInteres />} />
               <Route path="/referencias" element={<Referencias />} />
+              <Route path="/otrosDatos" element={<OtrosDatosInteres />} />
+              <Route path="/documentos" element={<Documentos />} />
               <Route path="#Contacto" />
             </Routes>
           </BrowserRouter>

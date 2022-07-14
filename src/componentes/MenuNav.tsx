@@ -20,8 +20,9 @@ class MenuNav extends React.Component {
                             <Nav.Link href="./Presentacion" className="text-secondary mx-5 navItems">Presentación</Nav.Link>
                             <Nav.Link href="./Formacion" className="text-secondary mx-5 navItems">Formación academica</Nav.Link>
                             <Nav.Link href="./ExperienciasLaborales" className="text-secondary mx-5 navItems">Experiencias laborales</Nav.Link>
-                            <Nav.Link href="./OtrosDatos" className="text-secondary mx-5 navItems">Otros datos de interés</Nav.Link>
                             <Nav.Link href="./Referencias" className="text-secondary mx-5 navItems">Referencias</Nav.Link>
+                            <Nav.Link href="./OtrosDatos" className="text-secondary mx-5 navItems">Otros datos de interés</Nav.Link>
+                            <Nav.Link href="./Documentos" className="text-secondary mx-5 navItems">Documentos</Nav.Link>
                             <Nav.Link href="./Contacto" className="text-secondary mx-5 navItems">Contacto</Nav.Link>
                         </div>
                     </div>
