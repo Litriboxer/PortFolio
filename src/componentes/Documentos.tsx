@@ -30,7 +30,7 @@ render(): React.ReactNode {
         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div className="modal-body">
-      <object className="PDFdoc" width="100%" height="500px" type="application/pdf" data="../Pdf/Curriculum_Full_Stack.pdf"></object>
+      <object className="PDFdoc" width="100%" height="500px" type="application/pdf" data="https://www.antennahouse.com/XSLsample/pdf/sample-link_1.pdf"></object>
       </div>
       <div className="modal-footer">
         <button type="button" className="btn btn-info">Descargar <i className="far fa-file-pdf ml-1 text-white"></i></button>
@@ -50,6 +50,4 @@ render(): React.ReactNode {
      
      export default Documentos;
 
-function setShow(arg0: boolean) {
-    throw new Error('Function not implemented.');
-}
+
