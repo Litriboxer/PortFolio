@@ -2,11 +2,7 @@ import React from 'react';
 import '../css/styles.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Nav } from 'react-bootstrap';
-
-
-
 class MenuNav extends React.Component {
-
 
 
 
