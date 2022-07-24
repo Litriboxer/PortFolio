@@ -17,7 +17,7 @@ class App extends React.Component {
       <div>
         <Cabecera />
         <MenuNav/>
-        <div className="App-container">
+        {/* <div className="App-container"> */}
           <BrowserRouter>
             <Routes>
               <Route path="/presentacion" element={<Presentacion />} />
@@ -29,7 +29,7 @@ class App extends React.Component {
               <Route path="#Contacto" />
             </Routes>
           </BrowserRouter>
-        </div>
+        {/* </div> */}
         <Footer />
       </div>
     );

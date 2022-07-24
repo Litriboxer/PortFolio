@@ -17,7 +17,7 @@ class Referencias extends React.Component {
           <div className="bg-gradient row container-xxl-1 justify-content-center">
 
 
-          <div className="col-5 my-5 mx-5 card mb-3 ps-0 text-bg-dark ">
+          <div className="col-5 my-5 mx-5 card mb-3 ps-0 text-bg-dark shadowRef">
   <div className="row g-0">
     <div className="col-md-4">
       <img src={fotoMerche} className="img-fluid rounded-start" alt="Mercedes Martín de Paz"/>
@@ -41,7 +41,7 @@ class Referencias extends React.Component {
 </div>
 
 
-<div className="col-5 my-5 mx-5 card mb-3 ps-0 text-bg-dark ">
+<div className="col-5 my-5 mx-5 card mb-3 ps-0 text-bg-dark shadowRef">
   <div className="row g-0">
     <div className="col-md-4">
       <img src={fotoVanesa} className="img-fluid rounded-start" alt="fotografía Vanesa Montero Fernandez"></img>
@@ -64,7 +64,7 @@ class Referencias extends React.Component {
   </div>
 </div>
 
-<div className="col-5 my-5 mx-5 card mb-3 ps-0 text-bg-dark ">
+<div className="col-5 my-5 mx-5 card mb-3 ps-0 text-bg-dark shadowRef">
   <div className="row g-0">
     <div className="col-md-4">
       <img src={fotoAngel} className="img-fluid rounded-start" alt="fotografía Angel Luis Alvaro"></img>
