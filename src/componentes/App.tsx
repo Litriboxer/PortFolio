@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import '../css/App.css';
 import Cabecera from './Cabecera';
+import CurriculumPdf from './CurriculumPdf';
 import Documentos from './Documentos';
 import ExperienciasLaborales from './ExperienciasLaborales';
 import Footer from './Footer';
