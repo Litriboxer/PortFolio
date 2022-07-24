@@ -1,52 +1,67 @@
 import React from 'react';
 import '../css/styles.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-
-
+import { Button, Modal } from 'react-bootstrap';
+import ImagenBoton from "../multimedia/pdf.png";
+import CurriculumPdf from './CurriculumPdf';
 
 
 class Documentos extends React.Component {
-    
+  show: boolean;
 
-render(): React.ReactNode {
+  constructor(props: any) {
+    super(props);
+    this.show = false;
+
+  }
+
+  handleClose = () => {
+    this.show = false;
+    this.setState({ show: false });
+  };
+  handleShow = () => {
+    this.show = true;
+
+    this.setState({ show: true });
+  };
+
+
+  render(): React.ReactNode {
     return (
-        <div>
-<h1>Componente documentos</h1>
+      <div>
+        <h1 className="ms-5">Componente documentos</h1>
 
+        <Button
+          onClick={this.handleShow}
+          variant="secondary"
+          className="btn btn-outline-secondary ms-5"
+          id="botonNuevo"
+        >
+          <img src={ImagenBoton}
+            alt="boton abrir pdf" width={140} height={60} />
+        </Button>
 
+        <Modal show={this.show} onHide={this.handleClose} animation={true}>
+          <Modal.Header closeButton>
+            <Modal.Title>Curriculum PDF</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <CurriculumPdf />
+          </Modal.Body>
+          <Modal.Footer>
+            <Button>
+              descargar
+            </Button>
 
-<button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalPDF">
-  Launch demo modal
-</button>
+          </Modal.Footer>
+        </Modal>
 
-
-<div className="modal fade"  id="ModalPDF"  aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div className="modal-dialog modalWidth" role="document">
-    <div className="modal-content">
-      <div className="modal-header">
-        <h5 className="modal-title" id="exampleModalLabel">Curriculum</h5>
-        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div className="modal-body">
-      <object className="PDFdoc" width="100%" height="600px" type="application/pdf" data="https://www.antennahouse.com/XSLsample/pdf/sample-link_1.pdf" aria-label='Curriculum pdf'></object>
-      </div>
-      <div className="modal-footer">
-        <button type="button" className="btn btn-info far fa-file-pdf ml-1 text-white">Descargar</button>
-        <button type="button" className="btn btn-outline-info waves-effect" data-dismiss="modal">Cerrar <i className="fas fa-times ml-1"></i></button>
-        
-        
-      </div>
-    </div>
-  </div>
-</div>
 
-        </div>
-          
-           );
-     }
-     }
-     
-     export default Documentos;
+    );
+  }
+}
+
+export default Documentos;
 
 
