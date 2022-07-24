@@ -11,13 +11,12 @@ class ExperienciasLaborales extends React.Component {
 
       <div className="bg-imagen bg-gradient row container-xxl-1">
         <h1 className="text-secondary display-4 text-left pt-5 pb-3 ps-5">Experiencias Laborales</h1>
-        <p className="mb-0">
           <p className="fst-italic presentacionTexto text-left h4 p-5">
             A continuación pueden ver mi actividad laboral.</p>
-            <p className="h4 text-left px-5">Como se puede comprobar, dicha actividad laboral no corresponde con la rama del desarrollo web. Es por esto que en 2021 hice un cambio de rumbo total y curse los estudios referidos en <a href="./Formacion">Formación Académica</a>
+            <p className="h4 text-left px-5 ">Como se puede comprobar, dicha actividad laboral no corresponde con la rama del desarrollo web. Es por esto que en 2021 hice un cambio de rumbo total y curse los estudios referidos en <a href="./Formacion">Formación Académica</a>
             ,siendo esta la ruta laboral que deseo seguir. Es un mundo que me apasiona y del que siempre he querido formar parte, así que espero poder hacerlo realidad en su empresa.
           </p>
-        </p>
+        
         <div className="container-xxl-1 row justify-content-center mx-5 my-5">
           <div className='col-6 sm-6 py-3'>
             <h4 className="h2 bold mb-5">Promoparc Subterraneo Servicios</h4>

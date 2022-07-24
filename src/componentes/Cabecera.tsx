@@ -1,5 +1,5 @@
 import React from 'react';
-import fotoPedro from "../multimedia/fotoPedro.png"
+import fotoPedro from "../multimedia/fotoPedro.png";
 import '../css/styles.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 class Cabecera extends React.Component {
