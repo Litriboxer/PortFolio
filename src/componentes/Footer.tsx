@@ -20,11 +20,11 @@ class Footer extends React.Component {
                     <div className='col-5 '>
                         <div className="container my-5 row align-items-center">
                             <div className='col-5 me-5 '>
-                                <h5 className="row d-flex justify-content-start text-secondary">Dirección</h5>
-                                <h5 className="row d-flex justify-content-start">Calle Lagartera nº106 Casa Baja</h5>
-                                <h5 className="row d-flex justify-content-start text-secondary">Código Postal</h5>
+                                <h5 className="row d-flex justify-content-start text-secondary">Direcci&oacute;n</h5>
+                                <h5 className="row d-flex justify-content-start">Calle Lagartera n&deg; 106 Casa Baja</h5>
+                                <h5 className="row d-flex justify-content-start text-secondary">C&oacute;digo Postal</h5>
                                 <h5 className="row d-flex justify-content-start">28053</h5>
-                                <h5 className="row d-flex justify-content-start text-secondary">Población</h5>
+                                <h5 className="row d-flex justify-content-start text-secondary">Poblaci&oacute;n</h5>
                                 <h5 className="row d-flex justify-content-start">Madrid</h5>
                             </div>
                         </div>
@@ -45,7 +45,7 @@ class Footer extends React.Component {
                             </div>
                             <div className="row align-items-center">
                                 <svg className="col-1 my-3 d-flex justify-content-start bi bi-envelope" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                    <path fillRule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
                                 </svg>
                                 <h5 className="col-3 mx-5">628994274 </h5>
                             </div>

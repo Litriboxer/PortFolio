@@ -16,20 +16,18 @@ class App extends React.Component {
     return (
       <div>
         <Cabecera />
-        <MenuNav/>
-        {/* <div className="App-container"> */}
-          <BrowserRouter>
-            <Routes>
-              <Route path="/presentacion" element={<Presentacion />} />
-              <Route path="/formacion" element={<FormacionAcademica />} />
-              <Route path="/experienciasLaborales" element={<ExperienciasLaborales />} />
-              <Route path="/referencias" element={<Referencias />} />
-              <Route path="/otrosDatos" element={<OtrosDatosInteres />} />
-              <Route path="/documentos" element={<Documentos />} />
-              <Route path="#Contacto" />
-            </Routes>
-          </BrowserRouter>
-        {/* </div> */}
+        <BrowserRouter>
+          <MenuNav />
+          <Routes>
+            <Route path="/presentacion" element={<Presentacion />} />
+            <Route path="/formacion" element={<FormacionAcademica />} />
+            <Route path="/experienciasLaborales" element={<ExperienciasLaborales />} />
+            <Route path="/referencias" element={<Referencias />} />
+            <Route path="/otrosDatos" element={<OtrosDatosInteres />} />
+            <Route path="/documentos" element={<Documentos />} />
+            <Route path="#Contacto" />
+          </Routes>
+        </BrowserRouter>
         <Footer />
       </div>
     );
