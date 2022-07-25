@@ -6,10 +6,10 @@ import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout';
 import { Worker } from '@react-pdf-viewer/core';
 import '@react-pdf-viewer/core/lib/styles/index.css';
 import '@react-pdf-viewer/default-layout/lib/styles/index.css';
-import Curriculum from '../pdf/Curriculum.pdf';
+import Diploma from '../pdf/Diploma_Full_Stack.pdf';
 
-export const CurriculumPdf = () =>  {
-    const [defaultCurriculum]=useState(Curriculum);
+export const DiplomaPdf = () =>  {
+    const [defaultDiploma]=useState(Diploma);
  
     const defaultLayoutPluginInstance = defaultLayoutPlugin();
 
@@ -18,8 +18,8 @@ export const CurriculumPdf = () =>  {
         <div>
          
          {/* show pdf conditionally (if we have one)  */}
-        {defaultCurriculum&&<><Worker workerUrl="https://unpkg.com/pdfjs-dist@2.6.347/build/pdf.worker.min.js">
-          <Viewer fileUrl={Curriculum}
+        {defaultDiploma&&<><Worker workerUrl="https://unpkg.com/pdfjs-dist@2.6.347/build/pdf.worker.min.js">
+          <Viewer fileUrl={Diploma}
           plugins={[defaultLayoutPluginInstance]}/>
             
             </Worker></>}
@@ -32,4 +32,4 @@ export const CurriculumPdf = () =>  {
     }
   
   
-  export default CurriculumPdf;
+  export default DiplomaPdf;
