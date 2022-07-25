@@ -6,12 +6,13 @@ import ImagenBotonPdf from "../multimedia/pdf.png";
 import ImagenBotonVideo from "../multimedia/video.png";
 import DiplomaPdf from './DiplomaPdf';
 import CurriculumPdf from './CurriculumPdf';
+import ModalDocumentos from './ModalDocumentos';
 
 
 
 
 class Documentos extends React.Component {
-  show: boolean;
+  /* show: boolean;
 
   constructor(props: any) {
     super(props);
@@ -26,20 +27,26 @@ class Documentos extends React.Component {
   handleShow = () => {
     this.show = true;
     this.setState({ show: true });
-  };
+  }; */
+
 
 
   render(): React.ReactNode {
     return (
       <div className="bg-gradient row container-xxl-1">
 
-        <div className="row container-xxl-1 align-items-center justify-content-center">
+         <div className="row container-xxl-1 align-items-center justify-content-center">
 
           <div className="col-5 ms-5">
             <h3 className="h1 text-secondary">Curr&iacute;culum Pdf</h3>
           </div>
           <div className="col-2">
-            <Button
+
+            <ModalDocumentos />
+
+
+
+            {/* <Button
               onClick={this.handleShow}
               variant="primary"
               id="botonModalCurr&iacute;culum"
@@ -55,7 +62,7 @@ class Documentos extends React.Component {
               <Modal.Body className='bg-gradient'>
                 <CurriculumPdf />
               </Modal.Body>
-            </Modal>
+            </Modal> */}
           </div>
         </div>
 
@@ -64,7 +71,13 @@ class Documentos extends React.Component {
             <h3 className="h1 text-secondary">Video Curr&iacute;culum</h3>
           </div>
           <div className="col-2">
-            <Button
+
+
+          <ModalDocumentos/>
+
+
+
+            {/* <Button
               onClick={this.handleShow}
               variant="primary"
               id="botonModalVideoCurr&iacute;culum"
@@ -84,7 +97,7 @@ class Documentos extends React.Component {
                   allowFullScreen>
                 </iframe>
               </Modal.Body>
-            </Modal>
+            </Modal> */}
           </div>
         </div>
 
@@ -95,7 +108,13 @@ class Documentos extends React.Component {
             <h3 className="h1 text-secondary">Diplomas Curso Full Stack Pdf</h3>
           </div>
           <div className="col-2">
-            <Button
+
+
+          <ModalDocumentos/>
+
+
+
+            {/* <Button
               onClick={this.handleShow}
               variant="primary"
               id="botonModalDiplomas"
@@ -111,9 +130,9 @@ class Documentos extends React.Component {
               <Modal.Body className='bg-gradient'>
                 <DiplomaPdf />
               </Modal.Body>
-            </Modal>
+            </Modal> */}
           </div>
-        </div>
+        </div> 
 
       </div>
 
