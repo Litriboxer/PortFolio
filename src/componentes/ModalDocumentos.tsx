@@ -1,22 +1,18 @@
 import React, { createRef } from "react";
 import { Button, Modal } from "react-bootstrap";
-
-
-
-
-
-
 class ModalDocumentos extends React.Component {
-    imagen: any;
-    body:any;
-    titulo: any;
+    static imagen: any;
+    static body:any;
+    static titulo: any;
+    static id: any;
     show: boolean;
 
     constructor(props: any) {
         super(props);
-        this.imagen = createRef();
-        this.body = createRef();
-        this.titulo = createRef();
+        ModalDocumentos.imagen = createRef();
+        ModalDocumentos.body = createRef();
+        ModalDocumentos.titulo = createRef();
+        ModalDocumentos.id = createRef();
         this.show = false;
     }
 
@@ -38,16 +34,16 @@ class ModalDocumentos extends React.Component {
                     variant="primary"
                     id="botonModalCurr&iacute;culum"
                 >
-                        <img src={this.imagen}
+                        <img ref={ModalDocumentos.imagen}
                         alt="boton abrir modal" width={70} height={70} /> 
                 </Button>
 
-                <Modal id="ModalCurr&iacute;culum" size="lg" show={this.show} onHide={this.handleClose} animation={true}>
+                <Modal  ref={ModalDocumentos.id} size="lg" show={this.show} onHide={this.handleClose} animation={true}>
                     <Modal.Header closeButton className='bg-gradient'>
-                        <Modal.Title><h3 className="h1 ms-5"></h3></Modal.Title>
+                        <Modal.Title><h3 className="h1 ms-5" ref={ModalDocumentos.titulo}></h3></Modal.Title>
                     </Modal.Header>
                     <Modal.Body className='bg-gradient'>
-                        
+                        <div ref={ModalDocumentos.body}></div>
                     </Modal.Body>
                 </Modal>
 
